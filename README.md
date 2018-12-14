@@ -433,9 +433,9 @@ console.log(getPerson()) // { name: "Nick", age: 24 } -- object implicitly retur
 
 화살표 함수에서 소개된 [this](#this_def)를 이해하려면, 당신은 자바스크립트가 어떻게 동작하는지 알아야만 합니다.
 
-화살표 함수에서 *this* 는 실행 구문 안쪽의 값과 같습니다. 그것은 화살표 함수 안에서는 새로운 *this* 를 만들 수 없다는 것을 의미합니다. 대신 그건 그 주변에 정의된 그 값이 딱 그 함수의 *this* 라는걸 잡아주는 역할을 합니다.
+화살표 함수에서 *this* 는 실행 구문 안쪽의 값과 같습니다. 그것은 화살표 함수 안에서는 새로운 *this* 를 만들 수 없다는 것을 의미합니다. 대신 그건 그 주변에 정의된 그 값이 딱 그 함수의 *this* 라는걸 알려주는 역할을 합니다.
 
-화살표가 없는 함수에서는 만약 당신의 함수 안쪽에서 *this*에 접근하길 원한다면, 당산은 that= this 또는 self = this를 사용해 접근할 수 있습니다.
+화살표가 없는 함수에서는 만약 당신의 함수 안쪽에서 *this*에 접근하길 원한다면, 당신은 that= this 또는 self = this를 사용해 접근할 수 있습니다.
 
 예를 들어, myFunc 함수 안에서 setTimeout함수를 사용할 때 :
 
@@ -1236,7 +1236,7 @@ console.log(result) // 3
 
 *this* 연산자는 다른 언어들과 다르게 움직이고, 대부분의 경우 함수를 부르는 방법에 따라 결정됩니다.([Ref: MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)).
 
-이것의 개념은 미묘한 뜻이 많고, 꽤 어렵습니다. 나는 고도로 예측해 보면, 당신은 아래 제공되는 외부 리소스들을 깊게 봐야 합니다. 그러므로 나는 개인적으로 가진 *this*에 대한 것을 제공할 것입니다. 나는 this에 대한 팁을 [this article written by Yehuda Katz](http://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/)에서 배웠습니다.
+this의 개념은 미묘하면서 어려운 뜻을 많이 가지고 있습니다. 더 알아보려면, 당신은 아래 제공되는 외부 리소스들을 봐야 합니다. 그렇게 나는 내가 가진 *this*에 대한 내용을 제공할 것 입니다. 나는 this에 대한 팁을 [this article written by Yehuda Katz](http://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/)에서 배웠습니다.
 
 
 ```js
@@ -1282,7 +1282,9 @@ ES6에서 자바스크립트의 class들이 구문상의 prototype-based 상속�
 
 *class*는 만약 당신이 다른 언어들에서 많이 썼다면, 쉽게 에러 찾을때 였을 겁니다. 만약 당신이 자바스크립트의 class들을 이런 기초적인 일에 쓰는건 피하세요, 전적으로 다른 개념입니다. 
 
-이 문서는 위에서 본 것 처럼 그 언어를 가르치려고 하지 않습니다. 나는 당신이 프로토타입들이 뭐고 그것들이 어떻게 작동하는지 안다고 믿을껍니다. 만약 당신이 모른다면, 외부 리소스들이랑 아래 샘플 코드들을 보시면 됩니다.
+이 문서는 위에서 본 것 처럼 언어를 가르치려는건 아닙니다.
+나는 당신이 프로토타입이 뭐고 그것들이 어떻게 작동하는지 안다는 가정하에 설명합니다. 
+만약 당신이 모른다면, 외부 리소스들이랑 아래 샘플 코드들을 보시면 됩니다.
 
 #### Samples
 #### 샘플들
