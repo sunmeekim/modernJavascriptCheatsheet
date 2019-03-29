@@ -323,7 +323,7 @@ person = ["Nick"] // raises an error, because reassignment is not allowed with c
 
 ES6 자바스크립트로 업데이트 되면서 화살표 함수가 소개되었습니다. 이것은 우리가 함수를 선언할 수 있는 또다른 방식입니다. 이 방식이 가져다 주는 이점을 보면.
 - 간결성
-- *this*는 주변의 상태를 보고 가져다 씀
+- *this*는 그 함수 내부의 스코프를 가지는 *this* 임
 - return 생략 가능
 
 #### Sample code
